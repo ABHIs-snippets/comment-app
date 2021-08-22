@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real time comment app</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="container px-md-5">
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h4><strong>Real time comment app</strong></h4>
+            <p>Lorem ipsum dolor sit amet doloremque nulla laborum vel ut ex, cumque ratione voluptate impedit explicabo dignissimos animi eum consectetur! Perferendis, iste voluptate.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="border-bottom pb-2">Comments</div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="">Write a comment</label>
+                <textarea id="textarea" rows="3" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="col-md-12 mt-2 mb-4">
+            <button class="btn btn-primary float-right" id="submit">Post comment</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="typing text-success"></div>
+            <ul class="comment__box"></ul>
+        </div>
+    </div>
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
